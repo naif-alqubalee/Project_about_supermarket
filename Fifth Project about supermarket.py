@@ -22,8 +22,11 @@ while countw <= num_of_cashiers:
             if item_new == "add":
                 count += 1
             else:
-                print(f"the operation for today finshed\n thank you for attend today")
-                break
+                rep1 = input("if you want report write report: ")
+                if rep1 == "report":
+                    print(f"information:\n name: naif\n id: 3 \n the total for today is : {sum_total1} ")
+                # print(f"the operation for today finshed\n thank you for attend today")
+                    break
     elif id_person == 4: # cashier two
         print(f"welcome {name} ")
         count2 = 1 # counter for repeat operation
@@ -40,8 +43,11 @@ while countw <= num_of_cashiers:
             if item_new2 == "add":
                 count2 += 1
             else:
-                print(f"the operation for today finshed\n thank you for attend today")
-                break
+                rep2 = input("if you want report write report: ")
+                if rep2 == "report":
+                    print(f"information:\n name: naif\n id: 3 \n the total for today is : {sum_total1} ")
+                # print(f"the operation for today finshed\n thank you for attend today")
+                    break
     elif id_person == 5: # cashier three
         print(f"welcome {name} ")
         count3 = 1 # counter for repeat operation
@@ -58,18 +64,21 @@ while countw <= num_of_cashiers:
             if item_new3 == "add":
                 count3 += 1
             else:
-                print(f"the operation for today finshed\n thank you for attend today")
-                break
+                rep3 = input("if you want report write report: ")
+                if rep3 == "report":
+                    print(f"information:\n name: naif\n id: 3 \n the total for today is : {sum_total3} ")
+                # print(f"the operation for today finshed\n thank you for attend today")
+                    break
     else: # this for if the user enter the wrong id or name
         print(f"wrong input, please check your id again") 
         break
     countw += 1 # to follow the cashier
-rep = input("if you want report write report: ")
-if rep == "report":
-    print(f"information:\n name: naif\n id: 3 \n the total for today is : {sum_total1} \n"
-        f"information:\n name: ali\n id: 4 \n the total for today is : {sum_total2} \n"
-        f"information:\n name: saleh\n id: 5 \n the total for today is : {sum_total3} ")
-    print(f"Finshed")
+# rep1 = input("if you want report write report: ")
+# if rep1 == "report":
+#     print(f"information:\n name: naif\n id: 3 \n the total for today is : {sum_total1} ")
+#         # f"information:\n name: ali\n id: 4 \n the total for today is : {sum_total2} \n"
+#         # f"information:\n name: saleh\n id: 5 \n the total for today is : {sum_total3} ")
+#     print(f"Finshed")
 else:
     print(f"see you soon")
 
